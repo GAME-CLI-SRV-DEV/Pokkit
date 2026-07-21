@@ -1,5 +1,10 @@
 # Pokkit [![CircleCI](https://circleci.com/gh/PetteriM1/Pokkit.svg?style=svg)](https://circleci.com/gh/PetteriM1/Pokkit)
 
+> [!CAUTION]
+> This Plugin Only works in [Version].
+> we recommend you to switch to Nukkit Native Plugins or Use GeyserMC Instead.
+>
+
 The Minecraft multiplayer scene is fragmented. There are many competing server implementations. A popular server is [Spigot](http://www.spigotmc.org/). Spigot is able to load plugins, which can interact with Minecraft through the Spigot Plugin API. For Minecraft Pocket Edition, the mobile version of Minecraft, a server with a plugin API similar to Spigot exists: [Nukkit](https://nukkitx.com/). Unfortunately, plugins written for Spigot cannot run on Nukkit.
 
 Pokkit is a translation layer that allows plugins written for Spigot to work on Nukkit. However, it is far from perfect. Because of the size of the Spigot API, it is not possible for me to implement all of the Spigot API.
