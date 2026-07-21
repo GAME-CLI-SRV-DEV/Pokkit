@@ -114,6 +114,11 @@ public final class Pokkit {
 	public void onLoad(PluginBase plugin) {
 		VERSION = plugin.getDescription().getVersion();
 
+logger.log(Level.SEVERE, "WARNING! This Plugin Is In Unsupported Hell.");
+logger.log(Level.SEVERE, "We Recommend you to Switch to GeyserMC and PaperMC, Which is more reliable than pokkit.");
+logger.log(Level.SEVERE, "ViaVersion is also Incompatible too, if you are using ViaVersion Please use ViaProxy Instead.");
+
+
 		File pluginFolder = new File(plugin.getDataFolder(), "bukkitPlugins");
 		if (!pluginFolder.exists()) {
 			pluginFolder.mkdirs();
