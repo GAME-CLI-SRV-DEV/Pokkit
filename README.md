@@ -2,9 +2,18 @@
 
 > [!CAUTION]
 > This Plugin Only works in 1.0 and it's for porting only.\
-> we recommend you to switch to Nukkit Native Plugins or Use GeyserMC on PaperMC Instead on production servers.
->
+> we recommend you to switch to Nukkit Native Plugins or Use GeyserMC on PaperMC Instead on production servers.\
+> Cloudburst is also not supported. but if you are Cloudburst user, You can still choose to switch to GeyserMC.\
+> as of 2026, Running Java Edition Server with GeyserMC is the Best Option for Bedrock Edition.\
+> So, if you are considering building a bedrock server, the 100% Implementation of Vanilla+Bukkit/Spigot is Guaranteed on GeyserMC+Floodgate+Java Edition. so if you own Bedrock Server, instead of Pokkit, Consider the GeyserMC On Spigot Platform.
 
+## Transition to Geyser
+
+1. run "geyser"command and the pokkit will enter the transition step. the applied spigot plugins will be disabled.
+2. pokkit will download geyser and floodgate to the pokkit's seperate plugin folder, and rename it plugins.
+3. the server.jar will be installed too. additionally, the nukkit server.properties will be also copied to pokkit directory.
+4. pokkit will disable itself after it's transition was completed. after the transition, you may shut down your nukkit server and copy the things from pokkit directory.
+## Introduction
 The Minecraft multiplayer scene is fragmented. There are many competing server implementations. A popular server is [Spigot](http://www.spigotmc.org/). Spigot is able to load plugins, which can interact with Minecraft through the Spigot Plugin API. For Minecraft Pocket Edition, the mobile version of Minecraft, a server with a plugin API similar to Spigot exists: [Nukkit](https://nukkitx.com/). Unfortunately, plugins written for Spigot cannot run on Nukkit.
 
 Pokkit is a translation layer that allows plugins written for Spigot to work on Nukkit. However, it is far from perfect. Because of the size of the Spigot API, it is not possible for me to implement all of the Spigot API.
@@ -13,7 +22,7 @@ Pokkit is a translation layer that allows plugins written for Spigot to work on 
 
 My motivation for creating Pokkit was to allow some plugins that I use to work on Nukkit. I am not trying to write a complete implementation of the Spigot API myself. This would be impossible. Keep in mind that Spigot was created over the span of five years by hundreds of different programmers.
 
-## For Spigot plugin developrs
+## For Spigot plugin developers
 If you are a Spigot plugin developer looking to port your plugin, Pokkit may be very interesting to you. Instead of maintaining two code bases, or introducing large amounts of abstraction into your codebase, you can simply keep using the Spigot API.
 
 While testing your plugin, you will most likely come accross an unimplemented method or event. You are encouraged to implement these methods and events, and to submit your changes as a pull request. This will bring us closer to a complete implementation of the Spigot API.
@@ -27,7 +36,7 @@ Download the latest release [here](https://nukkitx.com/resources/pokkit.21/). In
 * A file called `permissions.yml`: this is Bukkit's [permissions.yml file](http://wiki.bukkit.org/Permissions.yml).
 * A file called `scoreboard.yml`: scoreboard data is saved here.
 
-It is important to remember that you must **install Bukkit plugins in the `plugins/Pokkit/bukkitPlugins/` directory**, and not in the `plugins/` directory.
+It is important to remember that you must **install Bukkit plugins in the `plugins/Pokkit/bukkitPlugins/` or `plugins/Pokkit/plugins/` directory**, and not in the `plugins/` directory.
 
 ## Compiling instructions
 * Make sure you have installed [Maven](https://maven.apache.org/).
